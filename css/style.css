@@ -1,0 +1,63 @@
+@import url("./reset.css");
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: transparent;
+}
+.container {
+  max-width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.header {
+  background: gray;
+  padding: 20px 0;
+  margin-bottom: 40px;
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__list {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.burger__btn {
+  padding: 5px;
+  display: none;
+  flex-direction: column;
+  background: transparent;
+  border: none;
+  gap: 5px;
+}
+.burger__item {
+  display: block;
+  width: 20px;
+  height: 2px;
+  background: black;
+}
+
+@media (max-width: 756px) {
+  .header__list {
+    display: none;
+    flex-direction: column;
+    padding: 30px;
+    background: gray;
+    position: absolute;
+    top: 21%;
+    right: 0;
+  }
+  .burger__btn {
+    display: flex;
+  }
+}
+
+.burgerActive {
+  display: flex;
+}
+
